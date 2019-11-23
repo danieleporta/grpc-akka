@@ -1,0 +1,18 @@
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service interface for io.grpc.health.v1.Health[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service interface for com.google.longrunning.Operations[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service interface for io.grpc.channelz.v1.Channelz[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service interface for io.grpc.reflection.v1alpha.ServerReflection[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service interface for example.myapp.helloworld.grpc.GreeterService[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service interface for example.myapp.helloworld.grpc.PositionService[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC client for io.grpc.health.v1.Health[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC client for com.google.longrunning.Operations[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC client for io.grpc.channelz.v1.Channelz[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC client for io.grpc.reflection.v1alpha.ServerReflection[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC client for example.myapp.helloworld.grpc.GreeterService[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC client for example.myapp.helloworld.grpc.PositionService[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service handler for io.grpc.health.v1.Health[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service handler for com.google.longrunning.Operations[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service handler for io.grpc.channelz.v1.Channelz[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service handler for io.grpc.reflection.v1alpha.ServerReflection[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service handler for example.myapp.helloworld.grpc.GreeterService[0m
+[0m[[0m[0minfo[0m] [0m[0mGenerating Akka gRPC service handler for example.myapp.helloworld.grpc.PositionService[0m
