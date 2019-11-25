@@ -59,19 +59,19 @@ object Operations {
   object Serializers {
     import akka.grpc.scaladsl.ScalapbProtobufSerializer
     
-    val OperationSerializer = new ScalapbProtobufSerializer(com.google.longrunning.Operation.messageCompanion)
+    val EmptySerializer = new ScalapbProtobufSerializer(com.google.protobuf.empty.Empty.messageCompanion)
     
     val CancelOperationRequestSerializer = new ScalapbProtobufSerializer(com.google.longrunning.CancelOperationRequest.messageCompanion)
     
-    val EmptySerializer = new ScalapbProtobufSerializer(com.google.protobuf.empty.Empty.messageCompanion)
+    val GetOperationRequestSerializer = new ScalapbProtobufSerializer(com.google.longrunning.GetOperationRequest.messageCompanion)
     
     val DeleteOperationRequestSerializer = new ScalapbProtobufSerializer(com.google.longrunning.DeleteOperationRequest.messageCompanion)
     
-    val ListOperationsResponseSerializer = new ScalapbProtobufSerializer(com.google.longrunning.ListOperationsResponse.messageCompanion)
+    val OperationSerializer = new ScalapbProtobufSerializer(com.google.longrunning.Operation.messageCompanion)
     
     val ListOperationsRequestSerializer = new ScalapbProtobufSerializer(com.google.longrunning.ListOperationsRequest.messageCompanion)
     
-    val GetOperationRequestSerializer = new ScalapbProtobufSerializer(com.google.longrunning.GetOperationRequest.messageCompanion)
+    val ListOperationsResponseSerializer = new ScalapbProtobufSerializer(com.google.longrunning.ListOperationsResponse.messageCompanion)
     
   }
 }

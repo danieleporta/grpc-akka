@@ -1,0 +1,88 @@
+// commonly used message types
+syntax = "proto3";
+
+//#options
+option java_multiple_files = true;
+option java_package = "smartarbitrage.api.interface.internal";
+option java_outer_classname = "ApiInterfaceCommonProto";
+
+
+package smartarbitrage.api.interface.internal;
+import "scalapb/scalapb.proto";
+import "google/protobuf/wrappers.proto";
+
+
+//#messages
+enum OrderType {
+    BID = 0;
+    ASK = 1;
+}
+
+message LimitOrder {
+    string qcode = 1;
+    OrderType side = 2;
+    string quantity = 3; //BigDecimal
+    string price = 4; //BigDecimal
+    bool postOnly = 5;
+    int32 leverage = 6;
+    google.protobuf.StringValue collateralCurrency = 7; // map Option[String]
+    google.protobuf.StringValue correlationId = 8; // map Option[String]
+}
+
+message Forex {
+    string qcode = 1;
+    string price = 2; //BigDecimal
+}
+
+//Note that enum values use C++ scoping rules,
+//meaning that enum values are siblings of their type, not children of it.
+//Therefore, "FILLED" must be unique within "smartarbitrage.api.interface.common",
+//not just within "OrderStatusType".
+
+enum OrderStatusType {
+    OST_PENDING_NEW = 0;
+    OST_NEW = 1;
+    OST_PARTIALLY_FILLED = 2;
+    OST_FILLED = 3;
+    OST_PENDING_CANCEL = 4;
+    OST_PARTIALLY_CANCELED = 5;
+    OST_CANCELED = 6;
+    OST_PENDING_REPLACE = 7;
+    OST_REPLACED = 8;
+    OST_STOPPED = 9;
+    OST_REJECTED = 10;
+    OST_EXPIRED = 11;
+    OST_UNKNOWN = 12;
+}
+
+enum CancelReasonType {
+    CRT_POST_ONLY = 0;
+    CRT_FORCE_LIQUIDATED = 1;
+    CRT_INVALIDORDERTYPE = 2;
+    CRT_INVALIDSIDE = 3;
+    CRT_INVALIDPRICE = 4;
+    CRT_INSUFFICIENTAVAILABLEFUNDS = 5;
+    CRT_SELFFILL = 6;
+    CRT_TOOMANYSMALLORDERS = 7;
+    CRT_MARKETSUSPENDED = 8;
+    CRT_MARKETINACTIVE = 9;
+    CRT_CLIENTORDERIDALREADYEXIST = 10;
+    CRT_CLIENTORDERIDTOOLONG = 11;
+    CRT_MAXPOSITIONVIOLATION = 12;
+    CRT_CANCELLED = 13;
+    CRT_FILLED = 14;
+    CRT_NOTFOUND = 15;
+    CRT_REQUIREDARGUMENTMISSING = 16;
+}
+
+// used to generate Option[OrderStatusType]
+message OrderStatusTypeBox{
+    OrderStatusType status = 1;
+}
+
+// used to generate Option[CancelReasonType]
+message CancelReasonTypeBox{
+    CancelReasonType cancelReason = 1;
+}
+
+//#messages

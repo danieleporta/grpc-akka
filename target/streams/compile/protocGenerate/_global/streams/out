@@ -1,4 +1,4 @@
-[0m[[0m[0minfo[0m] [0m[0mCompiling 58 protobuf files to /home/dapo/work/experiments/grpc-akka/target/scala-2.13/src_managed/main,/home/dapo/work/experiments/grpc-akka/target/scala-2.13/src_managed/main,/home/dapo/work/experiments/grpc-akka/target/scala-2.13/src_managed/main,/home/dapo/work/experiments/grpc-akka/target/scala-2.13/src_managed/main[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling 59 protobuf files to /home/dapo/work/experiments/grpc-akka/target/scala-2.13/src_managed/main,/home/dapo/work/experiments/grpc-akka/target/scala-2.13/src_managed/main,/home/dapo/work/experiments/grpc-akka/target/scala-2.13/src_managed/main,/home/dapo/work/experiments/grpc-akka/target/scala-2.13/src_managed/main[0m
 [0m[[0m[0mdebug[0m] [0m[0mprotoc options:[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/api/logging.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/cloud/audit/audit_log.proto[0m
@@ -7,7 +7,6 @@
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/protobuf/descriptor.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/api/system_parameter.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/grpc/health/v1/health.proto[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/src/main/protobuf/helloworld.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/protobuf/field_mask.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/logging/type/http_request.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/api/endpoint.proto[0m
@@ -35,6 +34,7 @@
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/protobuf/compiler/plugin.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/protobuf/type.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/api/http.proto[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/src/main/protobuf/commons.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/protobuf/empty.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/protobuf/timestamp.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/api/monitored_resource.proto[0m
@@ -43,6 +43,7 @@
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/api/auth.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/type/color.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/longrunning/operations.proto[0m
+[0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/src/main/protobuf/gateway_api.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/protobuf/source_context.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/api/service.proto[0m
 [0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/dapo/work/experiments/grpc-akka/target/protobuf_external/google/api/consumer.proto[0m

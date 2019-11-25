@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+//#options
+option java_multiple_files = true;
+option java_package = "smartarbitrage.api.interface.internal";
+option java_outer_classname = "ApiInterfaceProto";
+
+
+package smartarbitrage.api.interface.internal;
+import "scalapb/scalapb.proto";
+import "google/protobuf/wrappers.proto";
+import "commons.proto";
+
+//#options
+
+//#services
+////////////////////////////////////// The greeting service definition.
+
+service GatewayApiService {
+    rpc GetPositions (PositionRequest) returns (stream PositionReply) {}
+    rpc PlaceLimitOrder(PlaceLimitOrderRequest) returns (PlaceLimitOrderReply){}
+
+}
+
+//#services
+
+//#messages
+message PositionReply {
+    string qcode = 1;
+    string volume = 2;// map BigDecimal
+    string entryPrice = 3;// map BigDecimal
+    google.protobuf.StringValue collateral = 4; // map Option[String]
+    google.protobuf.StringValue pnl = 5; // map Option[BigDecimal]
+}
+
+message PositionRequest {
+    string exchangeUri = 1;
+    string qcodes = 2;
+}
+
+
+message PlaceLimitOrderRequest {
+    string exchangeUri = 1;
+    LimitOrder order = 2  [(scalapb.field).no_box = true];
+    Forex swap = 3;
+}
+
+message PlaceLimitOrderReply {
+    string id = 1;
+    OrderStatusTypeBox status = 2;
+    CancelReasonTypeBox cancelReason = 3;
+}
+
+//#messages

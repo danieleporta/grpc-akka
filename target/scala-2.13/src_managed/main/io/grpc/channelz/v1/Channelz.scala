@@ -52,33 +52,33 @@ object Channelz {
   object Serializers {
     import akka.grpc.scaladsl.ScalapbProtobufSerializer
     
+    val GetServersResponseSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetServersResponse.messageCompanion)
+    
+    val GetTopChannelsResponseSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetTopChannelsResponse.messageCompanion)
+    
+    val GetTopChannelsRequestSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetTopChannelsRequest.messageCompanion)
+    
+    val GetSubchannelRequestSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetSubchannelRequest.messageCompanion)
+    
     val GetSocketRequestSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetSocketRequest.messageCompanion)
+    
+    val GetSubchannelResponseSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetSubchannelResponse.messageCompanion)
     
     val GetSocketResponseSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetSocketResponse.messageCompanion)
     
     val GetServerResponseSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetServerResponse.messageCompanion)
     
-    val GetServersResponseSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetServersResponse.messageCompanion)
-    
-    val GetTopChannelsRequestSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetTopChannelsRequest.messageCompanion)
-    
-    val GetServerRequestSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetServerRequest.messageCompanion)
-    
-    val GetServersRequestSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetServersRequest.messageCompanion)
-    
-    val GetTopChannelsResponseSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetTopChannelsResponse.messageCompanion)
-    
-    val GetChannelRequestSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetChannelRequest.messageCompanion)
-    
     val GetChannelResponseSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetChannelResponse.messageCompanion)
     
     val GetServerSocketsRequestSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetServerSocketsRequest.messageCompanion)
     
+    val GetServerRequestSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetServerRequest.messageCompanion)
+    
+    val GetChannelRequestSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetChannelRequest.messageCompanion)
+    
+    val GetServersRequestSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetServersRequest.messageCompanion)
+    
     val GetServerSocketsResponseSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetServerSocketsResponse.messageCompanion)
-    
-    val GetSubchannelRequestSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetSubchannelRequest.messageCompanion)
-    
-    val GetSubchannelResponseSerializer = new ScalapbProtobufSerializer(io.grpc.channelz.v1.GetSubchannelResponse.messageCompanion)
     
   }
 }
